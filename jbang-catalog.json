@@ -3,6 +3,10 @@
     "hello-world": {
       "script-ref": "src/main/java/com/jab/tools/HelloWorld.java",
       "description": "Hello World"
+    },
+    "amadeus-covid-restrictions": {
+      "script-ref": "src/main/java/com/jab/tools/AmadeusCOVIDRestrictions.java",
+      "description": "Provides information about COVID restrictions"
     }
   }
 }
