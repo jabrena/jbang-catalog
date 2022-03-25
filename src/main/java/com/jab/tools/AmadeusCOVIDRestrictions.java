@@ -1,6 +1,8 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
+
 //DEPS com.github.lalyos:jfiglet:0.0.8
 //DEPS com.amadeus:amadeus-java:5.9.0
+//DEPS org.projectlombok:lombok:1.18.22
 
 package com.jab.tools;
 
