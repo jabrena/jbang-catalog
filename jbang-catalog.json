@@ -1,7 +1,7 @@
 {
   "aliases": {
     "hello-world": {
-      "script-ref": "src/HelloWorld.java",
+      "script-ref": "src/main/java/com/jab/tools/HelloWorld.java",
       "description": "Hello World"
     }
   }
