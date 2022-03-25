@@ -21,10 +21,10 @@ public class AmadeusCOVIDRestrictions {
 
         System.out.println(FigletFont.convertOneLine("Amadeus for Developers"));
 
-        var AMADEUS_CLIENT_ID = args[0];
-        var AMADEUS_CLIENT_SECRET = args[1];
+        var AMADEUS_CLIENT_ID = System.getenv("AMADEUS_CLIENT_ID");
+        var AMADEUS_CLIENT_SECRET = System.getenv("AMADEUS_CLIENT_SECRET");
 
-        var COUNTRY_CODE = args[2];
+        var COUNTRY_CODE = args[0];
 
         Amadeus amadeus = Amadeus
                 .builder(AMADEUS_CLIENT_ID, AMADEUS_CLIENT_SECRET)
