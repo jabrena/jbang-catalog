@@ -33,7 +33,7 @@ public class AmadeusCOVIDRestrictions {
         DiseaseAreaReport diseaseAreaReport = amadeus.dutyOfCare.diseases.
                 covid19AreaReport.get(Params.with("countryCode",COUNTRY_CODE));//.and("cityCode", "MAD")
 
-        System.out.println("https://test.api.amadeus.com/v1/duty-of-care/diseases/covid19-area-report?countryCode=" + "FR");
+        System.out.println("https://test.api.amadeus.com/v1/duty-of-care/diseases/covid19-area-report?countryCode=" + COUNTRY_CODE);
         System.out.println();
         System.out.println(diseaseAreaReport.getAreaAccessRestriction().getDeclarationDocuments().getText());
         System.out.println();
