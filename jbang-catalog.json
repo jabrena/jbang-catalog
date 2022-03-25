@@ -1,0 +1,8 @@
+{
+  "aliases": {
+    "hello-world": {
+      "script-ref": "src/HelloWorld.java",
+      "description": "Hello World"
+    }
+  }
+}
