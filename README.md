@@ -1,18 +1,30 @@
 # jbang-catalog
 
-Register to get your AMADEUS_CLIENT_ID & AMADEUS_CLIENT_SECRET
-https://developers.amadeus.com
+## Motivation
+
+Sometimes, I need to travel in Europe or cross the Atlantic ocean but 
+after 2 years of COVID, before travelling I need to review country restrictions 
+defined for travellers.
+
+Amadeus for developers provides an API for that and it offer information for 200 countries.
+
+## How to use it?
+
+Register in [Amadeus for Developers](https://developers.amadeus.com) to get your `AMADEUS_CLIENT_ID` & `AMADEUS_CLIENT_SECRET`
+
+Export the values:
 
 ```
-mvn compile exec:java \
-    -Dexec.mainClass="com.jab.tools.AmadeusCOVIDRestrictions" \
-    -Dexec.args="AMADEUS_CLIENT_ID AMADEUS_CLIENT_SECRET COUNTRY_CODE"
-
-jbang hello-world@jabrena
-
 export AMADEUS_CLIENT_ID=YOUR_CLIENT_ID
 export AMADEUS_CLIENT_SECRET=YOUR_CLIENT_SECRET
+```
 
-jbang amadeus-covid-restrictions@jabrena $AMADEUS_CLIENT_ID $AMADEUS_CLIENT_SECRET FR
+And run the following `jbang` script:
 
 ```
+jbang amadeus-covid-restrictions@jabrena ES
+```
+
+Enjoy and travel safe
+
+Juan Antonio
