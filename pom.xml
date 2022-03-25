@@ -16,6 +16,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.github.lalyos</groupId>
+      <artifactId>jfiglet</artifactId>
+      <version>0.0.8</version>
+    </dependency>
+    <dependency>
       <groupId>com.amadeus</groupId>
       <artifactId>amadeus-java</artifactId>
       <version>5.9.0</version>
