@@ -9,5 +9,10 @@ mvn compile exec:java \
     -Dexec.args="AMADEUS_CLIENT_ID AMADEUS_CLIENT_SECRET COUNTRY_CODE"
 
 jbang hello-world@jabrena
-jbang amadeus-covid-restrictions@jabrena AMADEUS_CLIENT_ID AMADEUS_CLIENT_SECRET COUNTRY_CODE
+
+export AMADEUS_CLIENT_ID=YOUR_CLIENT_ID
+export AMADEUS_CLIENT_SECRET=YOUR_CLIENT_SECRET
+
+jbang amadeus-covid-restrictions@jabrena $AMADEUS_CLIENT_ID $AMADEUS_CLIENT_SECRET FR
+
 ```
