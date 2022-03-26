@@ -3,10 +3,10 @@
 ## Motivation
 
 Sometimes, I need to travel in Europe or cross the Atlantic ocean but 
-after 2 years of COVID, before travelling I need to review country restrictions 
+after 2 years of COVID, before travelling I need to review the country restrictions 
 defined for travellers.
 
-Amadeus for developers provides an API for that and it offer information for 200 countries.
+Amadeus for developers provides an API for that and it offer information.
 
 ## How to use it?
 
