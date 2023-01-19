@@ -2,7 +2,13 @@
   "aliases": {
     "amadeus-covid-restrictions": {
       "script-ref": "src/main/java/com/jab/tools/AmadeusCOVIDRestrictions.java",
-      "description": "Provides information about COVID restrictions"
+      "description": "Provides information about COVID restrictions",
+      "java": "17"
+    },
+    "raton-loco": {
+      "script-ref": "https://github.com/jabrena/raton-loco/blob/main/src/main/java/info/jab/utils/RatonLoco.java",
+      "description": "'Raton Loco' is a Windows utility to avoid the Screensaver",
+      "java": "8"
     }
   }
 }
