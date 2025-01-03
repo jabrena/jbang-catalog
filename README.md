@@ -13,6 +13,8 @@ jbang catalog add jabrena
 jbang alias list jabrena
 jbang colossal-cave-adventure@jabrena
 jbang raton-loco@jabrena
+
+jbang cache clear
 ```
 
 ## Link of interest:
