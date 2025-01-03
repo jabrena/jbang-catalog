@@ -11,6 +11,8 @@ A collection of JBang scripts.
 ```bash
 jbang catalog add jabrena
 jbang alias list jabrena
+jbang colossal-cave-adventure@jabrena
+jbang raton-loco@jabrena
 ```
 
 ## Link of interest:
