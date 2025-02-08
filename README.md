@@ -20,4 +20,5 @@ jbang setup@jabrena
 ## Link of interest:
 
 - https://www.jbang.dev/
+- https://www.jbang.dev/appstore/
 - https://www.jbang.dev/documentation/guide/latest/index.html
