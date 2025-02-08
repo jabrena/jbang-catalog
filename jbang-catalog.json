@@ -11,8 +11,8 @@
             "java": "24"
         },
         "setup": {
-            "script-ref": "https://github.com/jabrena/setup/releases/download/v0.1.0/setup-0.1.0.jar",
-            "description": "A JVM app designed to provided Cursor rules to your project.",
+            "script-ref": "https://github.com/jabrena/setup/releases/download/v0.2.0/setup-0.2.0.jar",
+            "description": "Setup CLI to help developers when they want to begin a new repository",
             "java": "23"
         }
     }
