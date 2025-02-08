@@ -9,12 +9,12 @@ A collection of JBang scripts.
 **Prerrequisite:** Jbang installed
 
 ```bash
-jbang catalog add jabrena
-jbang alias list jabrena
+jbang cache clear
+jbang catalog list
+jbang catalog list jabrena
 jbang colossal-cave-adventure@jabrena
 jbang raton-loco@jabrena
-
-jbang cache clear
+jbang setup@jabrena
 ```
 
 ## Link of interest:
