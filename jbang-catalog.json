@@ -1,18 +1,19 @@
 {
-  "aliases": {
-    "raton-loco": {
-      "script-ref": "https://github.com/jabrena/raton-loco/blob/main/src/main/java/info/jab/utils/RatonLoco.java",
-      "description": "'Raton Loco' is a Windows utility to avoid the Screensaver",
-      "java": "21"
-    },
-    "colossal-cave-adventure": {
-      "script-ref": "https://github.com/jabrena/colossal-cave-adventure/releases/download/0.1.0/colossal-cave-adventure-0.1.0.jar",
-      "description": "Colossal Cave Adventure a text adventure game, developed between 1975-1977, by Will Crowther. Rewritten in Java. Story credits go to Will Crowther",
-      "java": "24"
-    },
-    "setup": {
-      "script-ref": "https://github.com/jabrena/setup/releases/download/v0.1.0/setup-0.1.0.jar",
-      "description": "A JVM app designed to provided Cursor rules to your project.",
-      "java": "23"
+    "aliases": {
+        "raton-loco": {
+            "script-ref": "https://github.com/jabrena/raton-loco/blob/main/src/main/java/info/jab/utils/RatonLoco.java",
+            "description": "'Raton Loco' is a Windows utility to avoid the Screensaver",
+            "java": "21"
+        },
+        "colossal-cave-adventure": {
+            "script-ref": "https://github.com/jabrena/colossal-cave-adventure/releases/download/0.1.0/colossal-cave-adventure-0.1.0.jar",
+            "description": "Colossal Cave Adventure a text adventure game, developed between 1975-1977, by Will Crowther. Rewritten in Java. Story credits go to Will Crowther",
+            "java": "24"
+        },
+        "setup": {
+            "script-ref": "https://github.com/jabrena/setup/releases/download/v0.1.0/setup-0.1.0.jar",
+            "description": "A JVM app designed to provided Cursor rules to your project.",
+            "java": "23"
+        }
     }
 }
