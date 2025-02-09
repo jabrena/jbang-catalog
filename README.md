@@ -12,9 +12,10 @@ A collection of JBang scripts.
 jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
+
+jbang setup@jabrena
 jbang colossal-cave-adventure@jabrena
 jbang raton-loco@jabrena
-jbang setup@jabrena
 ```
 
 ## Link of interest:
