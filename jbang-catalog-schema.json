@@ -1,0 +1,219 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "JBang catalogs JSON Schema",
+    "description": "JSON Schema for jbang-catalog.json",
+    "type": "object",
+    "properties": {
+      "aliases": {
+        "description": "aliases",
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "script-ref": {
+              "type": "string",
+              "description": "Script to run: local or HTTP Java/Jar file, GAV"
+            },
+            "description": {
+              "type": "string",
+              "description": "Description for alias"
+            },
+            "arguments": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Arguments for script"
+            },
+            "java-options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "//JAVA_OPTIONS, such as '-Xms256m -Xmx2048m'. Use `java -X` to list options"
+            },
+            "runtime-options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "//JAVA_OPTIONS, such as '-Xms256m -Xmx2048m'. Use `java -X` to list options"
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "source files"
+            },
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "resource files"
+            },
+            "dependencies": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "//DEPS, such as 'com.github.ben-manes.caffeine:caffeine:3.0.5'"
+            },
+            "repositories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "//REPOS, such as mavencentral,google,jitpack, springmilestones=https://repo.spring.io/libs-milestone"
+            },
+            "classpaths": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Java classpath"
+            },
+            "properties": {
+              "type": "object",
+              "description": "System properties for script"
+            },
+            "java": {
+              "type": "string",
+              "enum": [
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24"
+              ],
+              "description": "Java version, such as 8, 11, 17"
+            },
+            "main": {
+              "type": "string",
+              "description": "Main class, such as com.example.Main"
+            },
+            "module": {
+              "type": "string",
+              "description": "Module name"
+            },
+            "compile-options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Compile options"
+            },
+            "native-image": {
+              "type": "boolean",
+              "description": "native-image or not"
+            },
+            "native-options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "native-image options"
+            },
+            "jfr": {
+              "type": "string",
+              "description": "Java Flight Record"
+            },
+            "debug": {
+              "type": "string",
+              "description": "Java Flight Record"
+            },
+            "cds": {
+              "type": "boolean",
+              "description": "Java CDS"
+            },
+            "interactive": {
+              "type": "boolean",
+              "description": "interactive"
+            },
+            "enable-assertions": {
+              "type": "boolean",
+              "description": "Enable assertions"
+            },
+            "enable-system-assertions": {
+              "type": "boolean",
+              "description": "Enable system assertions"
+            },
+            "manifest-options": {
+              "type": "object",
+              "description": "custom options in the MANIFEST.MF "
+            },
+            "java-agents": {
+              "type": "array",
+              "description": "java-agents",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "agent-ref": {
+                    "type": "string",
+                    "description": "agent ref"
+                  },
+                  "options": {
+                    "type": "string",
+                    "description": "agent options"
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "script-ref"
+          ]
+        }
+      },
+      "catalogs": {
+        "description": "catalogs",
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "catalog-ref": {
+              "type": "string",
+              "description": "Refer other catalog's name"
+            },
+            "description": {
+              "type": "string",
+              "description": "Description for other catalog"
+            }
+          }
+        }
+      },
+      "templates": {
+        "description": "templates",
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "file-refs": {
+              "type": "object",
+              "description": "Files included by template"
+            },
+            "description": {
+              "type": "string",
+              "description": "Description for template"
+            }
+          }
+        }
+      }
+    },
+    "required": [
+      "aliases"
+    ]
+  }
