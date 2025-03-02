@@ -14,7 +14,6 @@ jbang catalog list
 jbang catalog list jabrena
 
 jbang setup@jabrena
-jbang colossal-cave-adventure@jabrena
 jbang raton-loco@jabrena
 ```
 
