@@ -2,6 +2,8 @@
 //DEPS com.networknt:json-schema-validator:1.3.2
 //DEPS com.fasterxml.jackson.core:jackson-databind:2.15.3
 //DEPS info.picocli:picocli:4.7.5
+//DEPS org.slf4j:slf4j-api:2.0.9
+//DEPS ch.qos.logback:logback-classic:1.4.11
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,6 +11,8 @@ import com.networknt.schema.JsonSchema;
 import com.networknt.schema.JsonSchemaFactory;
 import com.networknt.schema.SpecVersion;
 import com.networknt.schema.ValidationMessage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -30,6 +34,8 @@ import java.util.concurrent.Callable;
 @Command(name = "validate", mixinStandardHelpOptions = true, version = "1.0",
          description = "Validates a JBang catalog JSON file against its schema.")
 public class JbangSchemaValidator implements Callable<Integer> {
+    
+    private static final Logger logger = LoggerFactory.getLogger(JbangSchemaValidator.class);
 
     @Option(names = {"-s", "--schema"}, description = "Path to the schema file")
     private String schemaFile = System.getenv().getOrDefault("SCHEMA_PATH", "jbang-catalog-schema.json");
@@ -48,9 +54,9 @@ public class JbangSchemaValidator implements Callable<Integer> {
     @Override
     public Integer call() {
         try {
-            log("Starting validation");
-            log("Schema file: " + schemaFile);
-            log("JSON file: " + jsonFile);
+            logger.debug("Starting validation");
+            logger.debug("Schema file: {}", schemaFile);
+            logger.debug("JSON file: {}", jsonFile);
             
             // Define file paths
             Path schemaPath = Paths.get(schemaFile);
@@ -58,12 +64,12 @@ public class JbangSchemaValidator implements Callable<Integer> {
             
             // Check if files exist
             if (!Files.exists(schemaPath)) {
-                System.err.println("Error: Schema file not found: " + schemaPath.toAbsolutePath());
+                logger.error("Schema file not found: {}", schemaPath.toAbsolutePath());
                 return 1;
             }
             
             if (!Files.exists(jsonPath)) {
-                System.err.println("Error: JSON file not found: " + jsonPath.toAbsolutePath());
+                logger.error("JSON file not found: {}", jsonPath.toAbsolutePath());
                 return 1;
             }
             
@@ -82,33 +88,25 @@ public class JbangSchemaValidator implements Callable<Integer> {
             Set<ValidationMessage> validationResult = schema.validate(jsonNode);
             
             if (validationResult.isEmpty()) {
-                System.out.println("Validation successful! ✓");
-                System.out.println("The file '" + jsonFile + "' is valid against the schema.");
+                logger.info("Validation successful! ✓");
+                logger.info("The file '{}' is valid against the schema.", jsonFile);
                 return 0;
             } else {
-                System.err.println("Validation failed! ✗");
-                System.err.println("The file '" + jsonFile + "' is not valid against the schema.");
-                System.err.println("\nValidation errors:");
+                logger.error("Validation failed! ✗");
+                logger.error("The file '{}' is not valid against the schema.", jsonFile);
+                logger.error("Validation errors:");
                 
                 // Print all validation errors
-                validationResult.forEach(msg -> System.err.println(" - " + msg));
+                validationResult.forEach(msg -> logger.error(" - {}", msg));
                 
                 return 2; // Specific error code for validation failure
             }
         } catch (IOException e) {
-            System.err.println("Error reading files: " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Error reading files: {}", e.getMessage(), e);
             return 3; // File I/O error
         } catch (Exception e) {
-            System.err.println("Error during validation: " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Error during validation: {}", e.getMessage(), e);
             return 4; // General error
-        }
-    }
-    
-    private void log(String message) {
-        if (verbose) {
-            System.out.println("[INFO] " + message);
         }
     }
 }
