@@ -1,7 +1,8 @@
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:23-jre-alpine
 
 # Install JBang
-RUN curl -Ls https://sh.jbang.dev | bash -s - app setup
+RUN apk add --no-cache curl bash && \
+    curl -Ls https://sh.jbang.dev | bash -s - app setup
 ENV PATH="${PATH}:/root/.jbang/bin"
 
 # Create working directory
