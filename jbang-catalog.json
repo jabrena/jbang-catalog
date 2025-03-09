@@ -9,6 +9,11 @@
             "script-ref": "https://github.com/jabrena/setup/releases/download/v0.4.1/setup-0.4.1.jar",
             "description": "Setup is a CLI utility designed to help developers when they start working with a new repository",
             "java": "23"
+        },
+        "mcp-calculator": {
+            "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPCalculator.java",
+            "description": "MCP Calculator example to learn MCP, Model Context Protocol",
+            "java": "23"
         }
     }
 }
