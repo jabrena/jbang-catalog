@@ -12,7 +12,12 @@
         },
         "mcp-calculator": {
             "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPCalculator.java",
-            "description": "MCP Calculator example to learn MCP, Model Context Protocol",
+            "description": "MCP Calculator. An example designed to learn MCP, Model Context Protocol",
+            "java": "23"
+        },
+        "mcp-realweather": {
+            "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPRealWeather.java",
+            "description": "MCP MCPRealWeather. An example designed to learn MCP, Model Context Protocol",
             "java": "23"
         }
     }
