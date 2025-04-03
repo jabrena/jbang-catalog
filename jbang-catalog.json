@@ -8,17 +8,22 @@
         "setup": {
             "script-ref": "https://github.com/jabrena/setup/releases/download/v0.5.0/setup-0.5.0.jar",
             "description": "Setup is a CLI utility designed to help developers when they start working with a new repository",
-            "java": "23"
+            "java": "24"
         },
         "mcp-calculator": {
             "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPCalculator.java",
             "description": "MCP Calculator. An example designed to learn MCP, Model Context Protocol",
-            "java": "23"
+            "java": "24"
         },
         "mcp-realweather": {
             "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPRealWeather.java",
             "description": "MCP MCPRealWeather. An example designed to learn MCP, Model Context Protocol",
-            "java": "23"
+            "java": "24"
+        }
+        "mcp-stopwatch": {
+            "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPStopWatch.java",
+            "description": "MCP MCPStopWatch. A MCP Server designed to measure the time used by an Agent to implement a Prompt",
+            "java": "24"
         }
     }
 }
