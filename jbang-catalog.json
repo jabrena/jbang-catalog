@@ -19,7 +19,7 @@
             "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPRealWeather.java",
             "description": "MCP MCPRealWeather. An example designed to learn MCP, Model Context Protocol",
             "java": "24"
-        }
+        },
         "mcp-stopwatch": {
             "script-ref": "https://github.com/jabrena/jbang-mcp-examples/blob/main/src/main/java/MCPStopWatch.java",
             "description": "MCP MCPStopWatch. A MCP Server designed to measure the time used by an Agent to implement a Prompt",
