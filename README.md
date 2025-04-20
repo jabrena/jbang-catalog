@@ -1,6 +1,6 @@
 # jbang-catalog
 
-A collection of JBang scripts.
+A collection of JBang scripts written by *Juan Antonio Breña Moral*
 
 - [jbang-catalog.json](jbang-catalog.json)
 
@@ -9,15 +9,19 @@ A collection of JBang scripts.
 **Prerrequisite:** Jbang installed
 
 ```bash
+sdk install jbang
+
 jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
 
+jbang cursor-mcp-config@jabrena
+jbang mcp-stopwatch@jabrena
 jbang setup@jabrena
 jbang raton-loco@jabrena
 ```
 
-## Link of interest:
+## Link of interest
 
 - https://www.jbang.dev/
 - https://www.jbang.dev/appstore/
