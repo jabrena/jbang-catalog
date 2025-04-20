@@ -15,5 +15,10 @@
             "description": "MCP MCPStopWatch. A MCP Server designed to measure the time used by an Agent to implement a Prompt",
             "java": "24"
         }
+        "cursor-mcp-config": {
+            "script-ref": "https://github.com/jabrena/cursor-mcp-config-cli/blob/main/src/main/java/info/jab/jbang/CursorMCPConfig.java",
+            "description": "Cursor AI MCP Cursor is a Terminal CLI to handle multiple configurations for ~/.cursor/mcp.json",
+            "java": "24"
+        }
     }
 }
