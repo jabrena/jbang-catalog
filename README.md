@@ -11,6 +11,7 @@ A collection of JBang scripts written by *Juan Antonio Breña Moral*
 ```bash
 sdk install jbang
 
+jbang trust list
 jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
