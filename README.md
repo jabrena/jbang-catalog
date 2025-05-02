@@ -18,7 +18,7 @@ jbang catalog list jabrena
 
 jbang qr-code@jabrena
 jbang cursor-mcp-config@jabrena
-jbang mcp-stopwatch@jabrena
+jbang stopwatch-mcp@jabrena
 jbang setup@jabrena
 jbang raton-loco@jabrena
 ```
