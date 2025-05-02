@@ -16,6 +16,7 @@ jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
 
+jbang qr-code@jabrena
 jbang cursor-mcp-config@jabrena
 jbang mcp-stopwatch@jabrena
 jbang setup@jabrena
