@@ -19,6 +19,11 @@
             "script-ref": "https://github.com/jabrena/cursor-mcp-config-cli/blob/main/src/main/java/info/jab/jbang/CursorMCPConfig.java",
             "description": "Cursor AI MCP Cursor is a Terminal CLI to handle multiple configurations for ~/.cursor/mcp.json",
             "java": "24"
+        },
+        "qr-code": {
+            "script-ref": "https://github.com/jabrena/qr-code-cli/blob/main/src/main/java/info/jab/cli/TerminalQRCode.java",
+            "description": "Generate a QR Code from a URL",
+            "java": "24"
         }
     }
 }
