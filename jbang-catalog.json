@@ -6,7 +6,7 @@
             "java": "21"
         },
         "setup": {
-            "script-ref": "https://github.com/jabrena/setup/releases/download/0.8.0/setup-0.8.0.jar",
+            "script-ref": "https://github.com/jabrena/setup/releases/download/0.9.0/setup-0.9.0.jar",
             "description": "Setup is a CLI utility designed to help developers when they start working with a new repository",
             "java": "24"
         },
