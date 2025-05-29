@@ -24,6 +24,11 @@
             "script-ref": "https://github.com/jabrena/qr-code-cli/blob/main/src/main/java/info/jab/cli/TerminalQRCode.java",
             "description": "Generate a QR Code from a URL",
             "java": "24"
-        }
+        },
+        "plantuml-to-png": {
+            "script-ref": "https://github.com/jabrena/plantuml-to-png-cli/releases/download/0.1.0/plantuml-to-png-0.1.0.jar",
+            "description": "Convert PlantUML files to PNG format",
+            "java": "24"
+        }        
     }
 }
