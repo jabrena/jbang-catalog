@@ -7,7 +7,7 @@
         },
         "setup": {
             "script-ref": "https://github.com/jabrena/setup-cli/releases/download/0.10.0/setup-0.10.0.jar",
-            "description": "Setup is a CLI utility designed to help developers when they start working with a new repository",
+            "description": "Setup is a command line utility designed to help developers when initializing new projects using Maven",
             "java": "24"
         },
         "stopwatch-mcp": {
