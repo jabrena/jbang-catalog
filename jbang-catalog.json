@@ -25,9 +25,9 @@
             "description": "Generate a QR Code from a URL",
             "java": "24"
         },
-        "plantuml-to-png": {
-            "script-ref": "https://github.com/jabrena/plantuml-to-png-cli/releases/download/0.2.0/plantuml-to-png-0.2.0.jar",
-            "description": "Convert PlantUML files to PNG format",
+        "puml-to-png": {
+            "script-ref": "https://github.com/jabrena/plantuml-to-png-cli/releases/download/0.3.0/puml-to-png-0.3.0.jar",
+            "description": "Convert PlantUML (.puml) files to .png format",
             "java": "24"
         }        
     }
