@@ -30,7 +30,7 @@
             "description": "Convert PlantUML (.puml) files to .png format",
             "java": "24"
         },
-        "churera": {
+        "churrera": {
             "script-ref": "https://github.com/jabrena/churrera/releases/download/0.1.0/churrera-cli-0.1.0.jar",
             "description": "Churrera is a Java development CLI tool designed to operate with Cursor Cloud Agents API in an easy way",
             "java": "25"
