@@ -3,7 +3,7 @@
         "raton-loco": {
             "script-ref": "https://github.com/jabrena/raton-loco/blob/main/src/main/java/info/jab/utils/RatonLoco.java",
             "description": "'Raton Loco' is a Windows utility to avoid the Screensaver",
-            "java": "21"
+            "java": "25"
         },
         "setup": {
             "script-ref": "https://github.com/jabrena/setup-cli/releases/download/0.12.0/setup-0.12.0.jar",
@@ -13,26 +13,26 @@
         "stopwatch-mcp": {
             "script-ref": "https://github.com/jabrena/stopwatch-mcp/blob/main/src/main/java/info/jab/jbang/MCPStopWatch.java",
             "description": "StopWatch MCP. A MCP Server designed to measure the time used by an Agent to implement a Prompt",
-            "java": "24"
+            "java": "25"
         },
         "cursor-mcp-config": {
             "script-ref": "https://github.com/jabrena/cursor-mcp-config-cli/blob/main/src/main/java/info/jab/jbang/CursorMCPConfig.java",
             "description": "Cursor AI MCP Cursor is a Terminal CLI to handle multiple configurations for ~/.cursor/mcp.json",
-            "java": "24"
+            "java": "25"
         },
         "qr-code": {
             "script-ref": "https://github.com/jabrena/qr-code-cli/blob/main/src/main/java/info/jab/cli/TerminalQRCode.java",
             "description": "Generate a QR Code from a URL",
-            "java": "24"
+            "java": "25"
         },
         "puml-to-png": {
             "script-ref": "https://github.com/jabrena/plantuml-to-png-cli/releases/download/0.5.0/puml-to-png-0.5.0.jar",
             "description": "Convert PlantUML (.puml) files to .png format",
-            "java": "24"
+            "java": "25"
         },
         "churrera": {
-            "script-ref": "https://github.com/jabrena/churrera/releases/download/0.1.0/churrera-cli-0.1.0.jar",
-            "description": "Churrera is a Java development CLI tool designed to operate with Cursor Cloud Agents API in an easy way",
+            "script-ref": "https://github.com/jabrena/churrera/releases/download/0.2.0-SNAPSHOT/churrera-cli-0.2.0-SNAPSHOT.jar",
+            "description": "Tasks like Churros! Churrera is a CLI tool designed to orchestrate Cursor Cloud Agents REST API in an easy way.",
             "java": "25"
         },
         "aoc": {
