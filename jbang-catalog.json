@@ -35,6 +35,11 @@
             "description": "Tasks like Churros! Churrera is a CLI tool designed to orchestrate Cursor Cloud Agents REST API in an easy way.",
             "java": "25"
         },
+        "churrera@0.2.0-SNAPSHOT": {
+            "script-ref": "https://github.com/jabrena/churrera/releases/download/0.2.0-SNAPSHOT/churrera-cli-0.2.0-SNAPSHOT.jar",
+            "description": "Tasks like Churros! Churrera is a CLI tool designed to orchestrate Cursor Cloud Agents REST API in an easy way.",
+            "java": "25"
+        },
         "aoc": {
             "script-ref": "https://github.com/jabrena/aoc-cli/releases/download/0.1.0/aoc-cli-0.1.0.jar",
             "description": "Advent of Code CLI tool",
