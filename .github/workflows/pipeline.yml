@@ -17,7 +17,9 @@ jobs:
           submodules: true
       
       - name: Setup JBang
-        uses: jbangdev/setup-jbang@v1
+        run: |
+          curl -Ls https://sh.jbang.dev | bash -s - app setup
+          echo "$HOME/.jbang/bin" >> $GITHUB_PATH
       
       - name: Validate JBang Catalog
         run: |
