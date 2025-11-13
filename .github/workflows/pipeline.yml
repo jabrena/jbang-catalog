@@ -1,11 +1,7 @@
 name: Validate JBang Catalog
 
 on:
-  push:
-    paths:
-      - 'jbang-catalog.json'
-      - '.github/scripts/jbang-catalog-schema.json'
-      - '.github/scripts/JbangSchemaValidator.java'
+  push: {}
   workflow_dispatch:
 
 jobs:
