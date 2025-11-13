@@ -42,7 +42,7 @@ public class JbangSchemaValidator implements Callable<Integer> {
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     @Option(names = {"-s", "--schema"}, description = "Path to the schema file")
-    private String schemaFile = System.getenv().getOrDefault("SCHEMA_PATH", "jbang-catalog-schema.json");
+    private String schemaFile = System.getenv().getOrDefault("SCHEMA_PATH", ".github/scripts/jbang-catalog-schema.json");
 
     @Option(names = {"-j", "--json"}, description = "Path to the JSON file to validate")
     private String jsonFile = System.getenv().getOrDefault("JSON_PATH", "jbang-catalog.json");

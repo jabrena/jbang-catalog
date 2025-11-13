@@ -8,8 +8,10 @@ ENV PATH="${PATH}:/root/.jbang/bin"
 # Create working directory
 WORKDIR /app
 
-# Copy the validator script
-COPY JbangSchemaValidator.java .
+# Copy the validator script and schema
+COPY .github/scripts/JbangSchemaValidator.java .
+COPY .github/scripts/jbang-catalog-schema.json .
+COPY jbang-catalog.json .
 
 # Set default schema and JSON paths
 ENV SCHEMA_PATH=/app/jbang-catalog-schema.json

@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - 'jbang-catalog.json'
-      - 'jbang-catalog-schema.json'
+      - '.github/scripts/jbang-catalog-schema.json'
+      - '.github/scripts/JbangSchemaValidator.java'
   workflow_dispatch:
 
 jobs:
@@ -15,7 +16,9 @@ jobs:
         with:
           submodules: true
       
+      - name: Setup JBang
+        uses: jbangdev/setup-jbang@v1
+      
       - name: Validate JBang Catalog
         run: |
-          docker build -t jbang-validator .
-          docker run --rm -v $PWD:/app jbang-validator
+          jbang .github/scripts/JbangSchemaValidator.java --verbose
