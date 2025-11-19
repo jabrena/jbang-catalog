@@ -16,6 +16,7 @@ jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
 
+jbang sonar-search@jabrena
 jbang aoc@jabrena
 jbang churrera@jabrena
 jbang puml-to-png@jabrena
