@@ -44,6 +44,16 @@
             "script-ref": "https://github.com/jabrena/aoc-cli/releases/download/0.1.0/aoc-cli-0.1.0.jar",
             "description": "Advent of Code CLI tool",
             "java": "25"
-        }  
+        },
+        "sonar-search": {
+            "script-ref": "https://github.com/jabrena/sonar-search-cli/releases/download/0.1.0-SNAPSHOT/sonar-search-0.1.0-SNAPSHOT.jar",
+            "description": "Sonar Search CLI tool",
+            "java": "25"
+        },
+        "sonar-search.0.1.0-SNAPSHOT": {
+            "script-ref": "https://github.com/jabrena/sonar-search-cli/releases/download/0.1.0-SNAPSHOT/sonar-search-0.1.0-SNAPSHOT.jar",
+            "description": "Sonar Search CLI tool",
+            "java": "25"
+        },
     }
 }
