@@ -59,6 +59,11 @@
             "script-ref": "https://github.com/jabrena/sonar-search-cli/releases/download/0.2.0-SNAPSHOT/sonar-search-0.2.0-SNAPSHOT.jar",
             "description": "Sonar Search CLI tool",
             "java": "25"
+        },
+        "result-json-map.0.1.0-SNAPSHOT": {
+            "script-ref": "https://github.com/jabrena/result-json-map-cli/releases/download/0.1.0-SNAPSHOT/result-json-map-0.1.0-SNAPSHOT.jar",
+            "description": "A CLI tool designed to help models when they return data in a structured way.",
+            "java": "25"
         }
     }
 }
