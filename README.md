@@ -16,6 +16,7 @@ jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
 
+jbang pml-to-md.0.4.0-SNAPSHOT@jabrena
 jbang result-json-map.0.1.0-SNAPSHOT@jabrena
 jbang sonar-search@jabrena
 jbang aoc@jabrena
