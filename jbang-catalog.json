@@ -69,6 +69,11 @@
             "script-ref": "https://github.com/jabrena/pml/releases/download/0.4.0-SNAPSHOT/pml-to-md-0.4.0-SNAPSHOT.jar",
             "description": "A CLI tool designed to convert PML files to Markdown.",
             "java": "25"
+        },
+        "pml-to-md": {
+            "script-ref": "https://github.com/jabrena/pml/releases/download/0.4.0/pml-to-md-0.4.0.jar",
+            "description": "A CLI tool designed to convert PML files to Markdown.",
+            "java": "25"
         }
     }
 }
