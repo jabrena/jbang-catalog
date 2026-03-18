@@ -35,11 +35,6 @@
             "description": "Tasks like Churros! Churrera is a CLI tool designed to orchestrate Cursor Cloud Agents REST API in an easy way.",
             "java": "25"
         },
-        "churrera.0.2.0-SNAPSHOT": {
-            "script-ref": "https://github.com/jabrena/churrera-cli/releases/download/0.2.0-SNAPSHOT/churrera-cli-0.2.0-SNAPSHOT.jar",
-            "description": "Tasks like Churros! Churrera is a CLI tool designed to orchestrate Cursor Cloud Agents REST API in an easy way.",
-            "java": "25"
-        },
         "aoc": {
             "script-ref": "https://github.com/jabrena/aoc-cli/releases/download/0.1.0/aoc-cli-0.1.0.jar",
             "description": "Advent of Code CLI tool",
@@ -50,23 +45,13 @@
             "description": "Sonar Search CLI tool",
             "java": "25"
         },
-        "sonar-search.0.1.0-SNAPSHOT": {
-            "script-ref": "https://github.com/jabrena/sonar-search-cli/releases/download/0.1.0-SNAPSHOT/sonar-search-0.1.0-SNAPSHOT.jar",
-            "description": "Sonar Search CLI tool",
-            "java": "25"
-        },
-        "sonar-search.0.2.0-SNAPSHOT": {
-            "script-ref": "https://github.com/jabrena/sonar-search-cli/releases/download/0.2.0-SNAPSHOT/sonar-search-0.2.0-SNAPSHOT.jar",
-            "description": "Sonar Search CLI tool",
-            "java": "25"
-        },
         "result-json-map.0.1.0-SNAPSHOT": {
             "script-ref": "https://github.com/jabrena/result-json-map-cli/releases/download/0.1.0-SNAPSHOT/result-json-map-0.1.0-SNAPSHOT.jar",
             "description": "A CLI tool designed to help models when they return data in a structured way.",
             "java": "25"
         },
         "pml-to-md": {
-            "script-ref": "https://github.com/jabrena/pml/releases/download/0.5.0/pml-to-md-0.5.0.jar",
+            "script-ref": "https://github.com/jabrena/pml/releases/download/0.6.0/pml-to-md-0.6.0.jar",
             "description": "A CLI tool designed to convert PML files to Markdown.",
             "java": "25"
         }
