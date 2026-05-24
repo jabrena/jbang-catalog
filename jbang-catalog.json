@@ -54,6 +54,11 @@
             "script-ref": "https://github.com/jabrena/pml/releases/download/0.7.0/pml-to-md-0.7.0.jar",
             "description": "A CLI tool designed to convert PML files to Markdown.",
             "java": "25"
+        },
+        "ai-agent-harness-monitor": {
+            "script-ref": "https://github.com/jabrena/ai-agent-harness-monitor-cli/releases/download/0.1.0/ai-agent-harness-monitor-cli-0.1.0.jar",
+            "description": "Java CLI tool designed to increase awareness about local AI-agent harness tool files like skills, rules, guidance files, MCPs, and enhanced security scanning capabilities.",
+            "java": "25"
         }
     }
 }
