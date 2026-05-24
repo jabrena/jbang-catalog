@@ -16,6 +16,7 @@ jbang cache clear
 jbang catalog list
 jbang catalog list jabrena
 
+jbang ai-agent-harness-monitor@jabrena
 jbang pml-to-md@jabrena
 jbang result-json-map.0.1.0-SNAPSHOT@jabrena
 jbang sonar-search@jabrena
