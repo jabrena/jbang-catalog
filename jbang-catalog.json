@@ -59,6 +59,11 @@
             "script-ref": "https://github.com/jabrena/ai-agent-harness-monitor-cli/releases/download/0.1.0/ai-agent-harness-monitor-cli-0.1.0.jar",
             "description": "Java CLI tool designed to increase awareness about local AI-agent harness tool files like skills, rules, guidance files, MCPs, and enhanced security scanning capabilities.",
             "java": "25"
+        },
+        "image-resizer": {
+            "script-ref": "https://github.com/jabrena/image-resizer/releases/download/0.1.0/image-resizer-0.1.0.jar",
+            "description": "A cli tool designed to resize images in .png and .jpg format",
+            "java": "25"
         }
     }
 }
